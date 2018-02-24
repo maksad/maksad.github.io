@@ -13,10 +13,6 @@
     <link rel="shortcut icon" href="./favicon.ico">
 
     <style>
-      * {
-        /* outline: 1px solid red */
-      }
-
       body {
         background: #ffffff url(./pattern.png) center fixed;
         font-family: Open Sans,sans-serif;
@@ -27,17 +23,11 @@
         height: 100vh;
         background: #45444b;
         width: 100%;
+        max-width: 1100px;
       }
 
       .container .row {
         margin: 0;
-      }
-
-      .header {
-        background-image: url('./header.png');
-        height: 60vh;
-        background-size: cover;
-        background-position: center;
       }
 
       .text-left {
@@ -56,10 +46,22 @@
         text-align: center;
       }
 
+      .row .col {
+        background: #45444b;
+      }
+
+      .row .col.header {
+        background-image: url('./header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        min-height: 430px;
+        background-position: bottom;
+      }
+
       .row .col.nav {
         margin: 0px;
         padding: 0;
-        background: #45444b;
         line-height: 40px;
       }
 
